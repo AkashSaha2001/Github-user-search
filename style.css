@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    padding: 10px;
+    background-size: cover;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    transition: 0.5s ease;
+}
+
+.container {
+    background-color: rgba(150, 197, 248, 0.8);
+    border-radius: 30px;
+    padding: 30px;
+    color: #333;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.search-container {
+    background: #fff;
+    height: 50px;
+    max-width: 450px;
+    border-radius: 30px;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, .3), -4px -4px 6px 0 rgba(116, 125, 136, .2), inset -4px -4px 6px 0 rgba(255, 255, 255, .2), inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+}
+
+.search-container .search-input {
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 350px;
+    font-size: 16px;
+    padding: 5px;
+}
+
+.search-container .search-btn .fas {
+    color: #5cbdbb;
+    cursor: pointer;
+}
+
+.invaliduser {
+    display: none;
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.profilebox {
+    display: none;
+    background-color: white;
+    border-radius: 25px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.profileimage img {
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 50%;
+}
+
+.profiledetails h6 {
+    text-align: left;
+    margin-left: 20px;
+}
+
+.profiledescription h6 {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.profiledescription span {
+    font-size: 18px;
+    display: block;
+    margin-top: 5px;
+}
+
+
+.repo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; 
+}
+
+.button {
+    background-color: rgba(150, 197, 248, 0.8);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+}
+
+.button h6 {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.button a {
+    color: black;
+    margin-left: 10px;
+}
+
+
+.language {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.language-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.badge img {
+    max-width: 250px;  
+    height: 30px;
+    object-fit: cover; 
+    border-radius: 5px; 
+}
