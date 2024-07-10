@@ -106,14 +106,12 @@ githubuserrepo.then((response) => {
         repoElement.classList.add("repo-item");
 
         repoElement.innerHTML = `
-            <div class="button">
+            <a href="${repo.html_url}" class="button">
                 <h6>
-                    ${repo.name}
-                    <a href="${repo.html_url}" target="_blank">
+                    ${repo.name} &nbsp;
                         <i class="fas fa-external-link-square-alt"></i>
-                    </a>
                 </h6>
-            </div>
+            </a>
             `;
 
         repoContainer.appendChild(repoElement);
