@@ -2,9 +2,9 @@
 // https://api.github.com/users/username
 // https://api.github.com/users/username/repos
 
-function find() {
-let username = document.getElementById("username").value;
-// let username = "akashsaha2001";
+// function find() {
+// let username = document.getElementById("username").value;
+let username = "akashsaha2001";
 
 let githubuser = fetch(`https://api.github.com/users/${username}`)
 
@@ -68,12 +68,13 @@ githubuser.then((response) => {
     document.getElementById("statshtml").innerHTML = `<img class="stats-img" draggable="false" id="stats"
             src="https://github-readme-stats.vercel.app/api?username=${username}&amp;theme=dark&amp;hide_border=false&amp;include_all_commits=false&amp;count_private=false"
             alt="">`
+            document.getElementById("streakhtml").innerHTML = `<img class="stats-img" draggable="false" id="streak"
+            src="https://github-readme-streak-stats.herokuapp.com/?user=${username}&amp;theme=dark&amp;hide_border=false"
+            alt="">`
     document.getElementById("langshtml").innerHTML = `<img class="stats-img" draggable = "false" id = "langs"
     src = "https://github-readme-stats.vercel.app/api/top-langs/?username=${username}&amp;theme=dark&amp;hide_border=false&amp;include_all_commits=false&amp;count_private=false&amp;layout=compact"
     alt = "" >`
-    document.getElementById("streakhtml").innerHTML = `<img class="stats-img" draggable="false" id="streak"
-            src="https://github-readme-streak-stats.herokuapp.com/?user=${username}&amp;theme=dark&amp;hide_border=false"
-            alt="">`
+    
 
 
 
@@ -283,4 +284,4 @@ githubuserrepo.then((response) => {
     console.log(error);
 })
 
-}
+// }
