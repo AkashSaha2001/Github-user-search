@@ -13,11 +13,14 @@
 
 <body>
     <div class="container mt-5">
-        <div class="search-container">
+        <h3 style="text-align: center; color: white;" id="searchtext"><b>Search Profile By Username</b></h3>
+        <div class="search-container mt-5">
             <input type="text" name="search" class="search-input" id="username" placeholder="GitHub Username">
-            <a href="#" class="search-btn" onclick="find()">
-                <i class="fas fa-search"></i>
-            </a>
+            <div class="button-search">
+                <a href="#" class="search-btn" onclick="find()">
+                    <i class="fas fa-search"></i>
+                </a>
+            </div>
         </div>
 
         <div class="invaliduser mt-5" id="invaliduser">
@@ -40,7 +43,7 @@
                                 <h6 id="company">Company</h6>
                             </div>
 
-                            <h6 class="mt-3" style="text-align: left;">Most Used language :</h6>
+                            <h6 class="mt-3" style="text-align: left;">Used language :</h6>
 
                             <div class="language mt-3" id="language">
 
@@ -69,11 +72,33 @@
                         </div>
                         <hr>
 
-                        <div class="repo mt-1 ms-5" id="repo">
+                        <div class="repo mt-1 ms-1" id="repo">
 
                         </div>
+
                     </div>
                 </div>
+
+                <div class="status" id="status" style=" padding: 10px;">
+                    <div class="row">
+
+                        <div class="col-md-4 col-12 d-flex justify-content-center align-items-center" id="statshtml"
+                            style="padding: 10px; ">
+
+                        </div>
+                        <div class="col-md-4 col-12 d-flex justify-content-center align-items-center" id="langshtml"
+                            style="padding: 10px;">
+
+                        </div>
+                        <div class="col-md-4 col-12 d-flex justify-content-center align-items-center" id="streakhtml"
+                            style="padding: 10px;">
+
+                        </div>
+
+
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
